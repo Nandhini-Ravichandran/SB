@@ -35,7 +35,7 @@
       },
       {
         "title": "Treemap",
-        "description": "Visualize the hierarchically structured data that are sized and colored by the quantitative variables.",
+        "description": "Visualize hierarchically structured data that is sized and colored by quantitative variables",
         "image": "images/treemap.png",
         "displayType": "tab",
         "status": "New",
@@ -48,21 +48,21 @@
             "subItems": [
               {
                 "type": "sample",
-                "title": "Squarify",
-                "key": "squarify_treemap_flat",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/flat_level/squarify.dart"
+                "title": "Squarified",
+                "key": "squarified_treemap_flat",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/flat/flat.dart"
               },
               {
                 "type": "sample",
                 "title": "Slice",
                 "key": "slice_treemap_flat",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/flat_level/slice.dart"
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/flat/flat.dart"
               },
               {
                 "type": "sample",
                 "title": "Dice",
                 "key": "dice_treemap_flat",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/flat_level/dice.dart"
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/flat/flat.dart"
               }
             ]
           },
@@ -73,7 +73,7 @@
               {
                 "type": "sample",
                 "title": "Hierarchical",
-                "key": "squarify_treemap_hierarchical",
+                "key": "squarified_treemap_hierarchical",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/hierarchical/hierarchical.dart"
               }
             ]
@@ -85,7 +85,7 @@
               {
                 "type": "sample",
                 "title": "Value color mapping",
-                "key": "squarify_value_color_mapping",
+                "key": "squarified_value_color_mapping",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/value_color_mapping/value_color_mapping.dart"
               }
             ]
@@ -97,8 +97,20 @@
               {
                 "type": "sample",
                 "title": "Range color mapping",
-                "key": "squarify_range_color_mapping",
+                "key": "squarified_range_color_mapping",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/range_color_mapping/range_color_mapping.dart"
+              }
+            ]
+          },
+          {
+            "type": "child",
+            "title": "Selection",
+            "subItems": [
+              {
+                "type": "sample",
+                "title": "Selection",
+                "key": "squarified_treemap_selection",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/selection/selection.dart"
               }
             ]
           },
@@ -109,7 +121,7 @@
               {
                 "type": "sample",
                 "title": "Custom background",
-                "key": "squarify_treemap_custom_background",
+                "key": "squarified_treemap_custom_background",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/treemap/custom_background/custom_background.dart"
               }
             ]
@@ -672,28 +684,14 @@
           {
             "type": "child",
             "title": "On-demand Loading",
-            "displayType": "card",
+            "displayType": "tab",
             "subItems": [
               {
                 "title": "Infinite scrolling",
                 "key": "infinite_scrolling",
                 "status": "New",
-                "description": "This sample demonstrates the infinite scrolling by showing the circular progress indicator until the data is loaded when horizontal scrolling reaches the end of the chart",
+                "description": "This sample demonstrates the infinite scrolling functionality. When horizontal scrolling reaches the end of the chart, more data will be loaded and a circular progress indicator will be shown until loading. ",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/cartesian_charts/on_demand_loading/infinite_scrolling.dart"
-              },
-              {
-                "title": "Load more",
-                "key": "load_more",
-                "status": "New",
-                "description": "This sample demonstrates how to show a button when horizontal scrolling reaches the end of the chart. On tapping the button circular indicator will be displayed and data will be loaded to the chart.",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/cartesian_charts/on_demand_loading/load_more.dart"
-              },
-              {
-                "title": "Pagination",
-                "key": "pagination",
-                "status": "New",
-                "description": "This sample demonstrates pagination feature.",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/cartesian_charts/on_demand_loading/pagination.dart"
               }
             ]
           },
@@ -1240,12 +1238,26 @@
               },
               {
                 "type": "child",
+                "title": "Pagination",
+                "displayType": "tab",
+                "subItems": [
+                  {
+                    "title": "Pagination",
+                    "key": "pagination",
+                    "status": "New",
+                    "description": "This sample shows how to view the next set of data on swiping the chart using the 'onPlotAreaSwipe' callback function. You can swipe from left to right or vice versa and also click on the days at the bottom to view the next set of data.",
+                    "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/cartesian_charts/on_demand_loading/pagination.dart"
+                  }
+                ]
+              },
+              {
+                "type": "child",
                 "title": "Auto Scrolling",
                 "displayType": "tab",
                 "subItems": [
                   {
                     "title": "Auto Scrolling",
-                    "description": "",
+                    "description": "In this sample, the data is being added every second. The chart is scrolled to the end automatically to view the current data and you can pan the chart from left to right direction to view the previous data points.",
                     "status": "new",
                     "key": "auto_scrolling",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/cartesian_charts/user_interactions/auto_scrolling.dart"
@@ -1449,7 +1461,7 @@
                 "displayType": "card",
                 "subItems": [
                   {
-                    "title": "Default pie chart",
+                    "title": "Default",
                     "key": "default_pie_chart",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/pie/default_pie_chart.dart"
                   },
@@ -1468,29 +1480,39 @@
                     "needsPropertyPanel": true
                   },
                   {
-                    "title": "Pie with grouping",
+                    "title": "Grouping",
                     "key": "pie_with_grouping",
                     "description": "This sample demonstrates the grouping functionality in a pie chart. Data points’ values less than the specified value can be grouped together.",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/pie/pie_with_grouping.dart"
                   },
                   {
-                    "title": "Pie with smart labels",
+                    "title": "Smart labels",
                     "key": "pie_with_smart_labels",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/pie/pie_with_smart_labels.dart",
                     "needsPropertyPanel": true
                   },
                   {
-                    "title": "Pie with gradient",
+                    "title": "Gradient fill",
                     "key": "pie_with_gradient",
+                    "description": "This sample demonstrates how to apply different types of gradient to the pie slices. Here you can apply the linear, sweep, and radial gradients using the dropdown menu in the property panel.",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/pie/pie_with_gradient.dart",
                     "status": "new",
                     "needsPropertyPanel": true
                   },
                   {
-                    "title": "Pie filled with image",
+                    "title": "Image fill",
                     "key": "pie_with_imageShader",
                     "status": "new",
+                    "description":"This sample demonstrates how to fill the pie slices with various images for each slice using the 'ImageShader'.",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/pie/pie_with_image.dart"
+                  },
+                  {
+                    "title": "Point render mode",
+                    "key": "pie_point_render_mode",
+                    "status": "new",
+                    "description":"This sample demonstrates how to fill the pie slices with various images for each slice using the 'ImageShader'.",
+                    "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/pie/pie_with_image.dart",
+                    "needsPropertyPanel": true
                   }
                 ]
               },
@@ -1500,25 +1522,25 @@
                 "displayType": "card",
                 "subItems": [
                   {
-                    "title": "Default doughnut chart",
+                    "title": "Default",
                     "key": "default_doughnut_chart",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/doughnut/default_doughnut_chart.dart",
                     "sourceLink": "https://www.pngkit.com/view/u2q8y3w7r5y3t4o0_composition-of-ocean-water-earths-oceans-elements-percentage/",
                     "sourceText": "www.pngkit.com"
                   },
                   {
-                    "title": "Doughnut with center elevation",
+                    "title": "Center elevation",
                     "key": "doughnut_with_center_elevation",
                     "description": "The doughnut chart is rendered with elevated circle at the center using annotations feature in this sample.",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/doughnut/doughnut_with_center_elevation.dart"
                   },
                   {
-                    "title": "Doughnut with rounded corners",
+                    "title": "Rounded corners",
                     "key": "doughnut_with_rounded_corners",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/doughnut/doughnut_with_rounded_corners.dart"
                   },
                   {
-                    "title": "Doughnut with color mapping",
+                    "title": "Color mapping",
                     "key": "doughnut_with_color_mapping",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/doughnut/doughnut_with_color_mapping.dart"
                   },
@@ -1529,8 +1551,9 @@
                     "needsPropertyPanel": true
                   },
                   {
-                    "title": "Doughnut with gradient",
+                    "title": "Gradient fill",
                     "key": "doughnut_with_gradient",
+                    "description":"This sample demonstrates how to apply different types of gradient to the doughnut slices. Here you can apply the linear, sweep, and radial gradients using the dropdown menu in the property panel.",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/doughnut/doughnut_with_gradient.dart",
                     "status": "new",
                     "needsPropertyPanel": true
@@ -1543,12 +1566,12 @@
                 "displayType": "card",
                 "subItems": [
                   {
-                    "title": "Default radial bar chart",
+                    "title": "Default",
                     "key": "default_radialbar_chart",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/radial_bar/default_radial_bar_chart.dart"
                   },
                   {
-                    "title": "Radial bar with legend",
+                    "title": "Legend",
                     "key": "radialbar_with_legend",
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/radial_bar/radial_bar_with_legend.dart"
                   },
@@ -1559,7 +1582,7 @@
                     "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/chart/circular_charts/chart_types/radial_bar/customized_radial_bar_chart.dart"
                   },
                   {
-                    "title": "Radial bar with gradient",
+                    "title": "Gradient fill",
                     "status": "new",
                     "key": "radialbar_with_gradient",
                     "description": "This sample renders the radial bar chart with gradient.",
@@ -1770,7 +1793,7 @@
                 "key": "radial_widget_pointer",
                 "status": "new",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/gauge/pointers/widget_pointer.dart",
-                "description": ""
+                "description": "This sample demonstrates how to use a custom widget as a pointer using the 'WidgetPointer'."
               }
             ]
           },
@@ -1976,13 +1999,6 @@
               },
               {
                 "type": "sample",
-                "title": "Satisfaction score",
-                "key": "range_track",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/showcase/range_tracker.dart",
-                "description": ""
-              },
-              {
-                "type": "sample",
                 "title": "Task tracker",
                 "key": "task_tracker",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/showcase/task_tracker.dart",
@@ -2004,14 +2020,14 @@
               },
               {
                 "type": "sample",
-                "title": "Heat Meter",
+                "title": "Temperature meter",
                 "key": "heat_meter",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/showcase/heat_mter.dart",
                 "description": ""
               },
               {
                 "type": "sample",
-                "title": "Range indicator",
+                "title": "Battery indicator",
                 "key": "battery_indicator",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/showcase/battery_indicator.dart",
                 "description": ""
@@ -2033,15 +2049,15 @@
               {
                 "type": "sample",
                 "title": "Ticks",
-                "key": "linear_tick_customization",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/axis/linear_tick_customization.dart",
+                "key": "ticks_customization",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/axis/tick_customization.dart",
                 "description": ""
               },
               {
                 "type": "sample",
                 "title": "Labels",
-                "key": "linear_label_customization",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/axis/linear_label_customization.dart",
+                "key": "label_customization",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/axis/label_customization.dart",
                 "description": ""
               }
             ]
@@ -2054,8 +2070,8 @@
               {
                 "type": "sample",
                 "title": "Default range",
-                "key": "default_range",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/ranges/default_range.dart",
+                "key": "custom_range",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/ranges/range_customization.dart",
                 "description": ""
               }
             ]
@@ -2084,6 +2100,20 @@
                 "title": "Bar pointer",
                 "key": "bar_pointer",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/pointers/bar_pointer.dart",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "child",
+            "title": "API",
+            "displayType": "tab",
+            "subItems": [
+              {
+                "type": "sample",
+                "title": "API",
+                "key": "api_gauge",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/linear_gauge/api/api_gauge.dart",
                 "description": ""
               }
             ]
@@ -2207,6 +2237,7 @@
                 "type": "sample",
                 "title": "Zooming",
                 "key": "zooming",
+                "status": "Updated",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/maps/shape_layer/zooming/zooming.dart"
               },
               {
@@ -2225,9 +2256,10 @@
             "subItems": [
               {
                 "type": "sample",
-                "title": "OSM",
-                "key": "osm",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/maps/tile_layer/osm/osm.dart"
+                "title": "OpenStreetMap",
+                "key": "open_street_map",
+                "status": "Updated",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/maps/tile_layer/open_street_map/open_street_map.dart"
               },
               {
                 "type": "sample",
@@ -2255,7 +2287,7 @@
                 "title": "Polygon",
                 "status": "New",
                 "key": "polygon",
-                "description": "This sample demonstrates how the default and inverted polygon can be used for denoting the particular area.",
+                "description": "This sample demonstrates how the default and inverted polygons can be used to denote a particular area",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/maps/tile_layer/vector_layer/polygon.dart"
               }
             ]
@@ -2284,7 +2316,6 @@
           {
             "type": "sample",
             "title": "Segment styles",
-            "showInWeb": false,
             "key": "progress_bar_segment_styles",
             "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/progress_bar/segment_styles.dart"
           },
@@ -2313,6 +2344,7 @@
         "description": "Light-weight line, area, column and win-loss charts which fits in a very small area.",
         "image": "images/sparkline_winloss.png",
         "displayType": "tab",
+        "isBeta":true,
         "controlId": 9,
         "subItems": [
           {
@@ -2359,6 +2391,7 @@
     "controlList": [
       {
         "title": "DataGrid",
+        "status": "Updated",
         "description": "Displays large amounts of data with different data types in a tabular view",
         "image": "images/Datagrid.png",
         "displayType": "tab",
@@ -2462,14 +2495,13 @@
           },
           {
             "type": "child",
-            "title": "Auto Row Height",
+            "title": "Row Height",
             "subItems": [
               {
                 "type": "sample",
-                "title": "Auto Row Height",
-                "description": "This sample showcases the auto row height feature of the DataGrid that improves readability of the content. DataGrid provides support to change the height of the row based on its content that changes at run time for all columns or certain columns.",
-                "key": "auto_row_height_datagrid",
-                "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/datagrid/auto_row_height/datagrid_auto_row_height.dart"
+                "title": "Row Height",
+                "key": "row_height_datagrid",
+                "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/datagrid/row_height/datagrid_row_height.dart"
               }
             ]
           },
@@ -2480,6 +2512,7 @@
               {
                 "type": "sample",
                 "title": "Styling",
+                "status": "Updated",
                 "key": "styling_datagrid",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/datagrid/apperance/styling/datagrid_styling.dart",
                 "needsPropertyPanel": true
@@ -2719,6 +2752,7 @@
         "displayType": "tab",
         "isBeta": true,
         "controlId": 1,
+        "status": "Updated",
         "subItems": [
           {
             "type": "sample",
@@ -2805,6 +2839,13 @@
             "key": "form",
             "status": "New",
             "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/pdf/form.dart"
+          },
+          {
+            "type": "sample",
+            "title": "Digital Signature",
+            "key": "digital_signature",
+            "status": "New",
+            "codeLink": "https://github.com/syncfusion/flutter-examples/blob/master/lib/samples/pdf/digital_signature.dart"
           }
         ]
       },
@@ -2858,11 +2899,10 @@
     "controlList": [
       {
         "title": "Slider",
-        "description": "Select a date or numeric value horizontally",
+        "description": "The horizontal slider enables you to select a date or a numeric value",
         "image": "images/slider.png",
         "displayType": "tab",
         "controlId": 1,
-        "isBeta": true,
         "subItems": [
           {
             "type": "child",
@@ -2943,10 +2983,9 @@
       },
       {
         "title": "Range Slider",
-        "description": "Select a date or numeric range horizontally",
+        "description": "The horizontal range slider enables you to select a date or a numeric range",
         "image": "images/range_slider.png",
         "controlId": 2,
-        "isBeta": true,
         "subItems": [
           {
             "type": "child",
@@ -3032,11 +3071,10 @@
       },
       {
         "title": "Vertical Slider",
-        "description": "Select a date or numeric value vertically",
+        "description": "The vertical slider enables you to select a date or a numeric value",
         "image": "images/vertical_slider.png",
         "displayType": "tab",
         "status": "New",
-        "isBeta": true,
         "controlId": 3,
         "subItems": [
           {
@@ -3118,10 +3156,9 @@
       },
       {
         "title": "Vertical Range Slider",
-        "description": "Select a date or numeric range vertically",
+        "description": "The vertical range slider enables you to select a date or a numeric range",
         "image": "images/vertical_range_slider.png",
         "displayType": "tab",
-        "isBeta": true,
         "status": "New",
         "controlId": 4,
         "subItems": [
@@ -3319,7 +3356,6 @@
                 "type": "sample",
                 "title": "Gradient Fill",
                 "key": "radial_slider_gradient",
-                "showInWeb": false,
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/radial_slider/customization/gradient.dart",
                 "description": ""
               }
@@ -3395,7 +3431,6 @@
               {
                 "type": "sample",
                 "title": "Gradient Fill",
-                "showInWeb": false,
                 "key": "radial_range_slider_gradient",
                 "codeLink": "https://github.com/syncfusion/flutter-examples/tree/master/lib/samples/radial_range_slider/customization/gradient.dart",
                 "description": ""

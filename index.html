@@ -42,24 +42,6 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-233131-38');
 	
-		async function download() {
-			var pdfAsDataUri = "data:application/pdf;base64, " + pdfdata;
-			var link = document.createElement('a');
-			link.download = filename;
-			link.href = pdfAsDataUri;
-			link.type = 'application/pdf';
-			link.click();
-		}
-
-		async function downloadExcel() {
-			var excelAsDataUri = "data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64, " + exceldata;
-			var link = document.createElement('a');
-			link.download = filename;
-			link.href = excelAsDataUri;
-			link.type = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
-			link.click();
-		}
-	
 		<!-- Start Alexa Certify Javascript -->
 		_atrk_opts = { 
 			atrk_acct:"LPpPs1Fx9f207i", 
@@ -86,7 +68,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=304801105');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1699653373');
       });
     }
   </script>
